@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.view.ViewHelper;
 import com.yanbin.mydrawelayout.widgest.MyDrawerLayout;
+import com.yanbin.mydrawelayout.widgest.MyMainLinearLayout;
 
 import java.util.Random;
 
@@ -26,8 +27,10 @@ public class MainActivity extends AppCompatActivity {
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         final ImageView iv_head= (ImageView) findViewById(R.id.iv_head);
+        MyMainLinearLayout mmll= (MyMainLinearLayout) findViewById(R.id.mmll);
 
         MyDrawerLayout mDrawerLayout= (MyDrawerLayout) findViewById(R.id.mDrawerLayout);
+        mmll.setDrawerLayout(mDrawerLayout);
 
         final   ListView lv_main= (ListView) findViewById(R.id.lv_main);
         final   ListView lv_left= (ListView) findViewById(R.id.lv_left);

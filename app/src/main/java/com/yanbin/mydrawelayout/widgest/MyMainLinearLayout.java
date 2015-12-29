@@ -23,7 +23,7 @@ public class MyMainLinearLayout extends LinearLayout {
         super(context);
     }
 
-    void setDrawerLayout(MyDrawerLayout layout) {
+   public void setDrawerLayout(MyDrawerLayout layout) {
         this.drawerLayout = layout;
     }
 
@@ -46,9 +46,10 @@ public class MyMainLinearLayout extends LinearLayout {
             return super.onTouchEvent(event);
         } else {
             //up事件中执行关闭
-            if (drawerLayout != null)
+
             if(event.getAction()==MotionEvent.ACTION_UP){
-                drawerLayout.close();
+                if (drawerLayout != null)
+                     drawerLayout.close();
             }
             return true;
         }

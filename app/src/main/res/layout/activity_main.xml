@@ -29,6 +29,7 @@
     <com.yanbin.mydrawelayout.widgest.MyMainLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/mmll"
         android:background="#ffffff"
         android:orientation="vertical">
 
