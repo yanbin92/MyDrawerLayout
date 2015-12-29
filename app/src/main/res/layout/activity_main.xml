@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yanbin.mydrawelayout.widgest.MyDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:id="@+id/mDrawerLayout"
+    tools:context="com.yanbin.mydrawelayout.MainActivity">
+    <!--left-->  <!--android:background="#883F51B5"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/head" />
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+    <com.yanbin.mydrawelayout.widgest.MyMainLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#18B6ef"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/head" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </com.yanbin.mydrawelayout.widgest.MyMainLinearLayout>
+</com.yanbin.mydrawelayout.widgest.MyDrawerLayout>
